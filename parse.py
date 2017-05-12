@@ -4,6 +4,17 @@ Created on Thu May 11 17:29:32 2017
 
 @author: n_venkata
 """
+
+from __future__ import print_function
+from future.standard_library import install_aliases
+install_aliases()
+
+from urllib.parse import urlparse, urlencode
+from urllib.request import urlopen, Request
+from urllib.error import HTTPError
+
+
+
 import pandas as pd
 from flask import Flask
 from flask import request
